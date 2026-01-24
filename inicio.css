@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/fondo.jpg'); /* Cambia esto por la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: black; /* Texto en negro */
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Sin márgenes */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura */
+    box-sizing: border-box; /* Incluye padding y border en el total del ancho y alto */
+}
+
+.container {
+    max-width: 400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espacio interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    margin-bottom: 70px; /* Espacio inferior para no superponerse con el footer */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.logo {
+    max-width: 120px; /* Tamaño del logo */
+    margin: 20px auto;
+    display: block; /* Comportamiento de bloque */
+}
+
+.button {
+    background-color: rgba(255, 107, 129, 0.9);
+    color: black; /* Color de texto en botones */
+    padding: 15px 10px; /* Padding de botones */
+    margin: 10px auto; /* Centrar los botones */
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre ícono y texto */
+    transition: background-color 0.3s, transform 0.3s;
+    max-width: 350px; /* Ancho máximo para los botones */
+    width: 100%; /* Ocupar el 100% del ancho permitido */
+}
+
+.button:hover {
+    background-color: rgba(255, 60, 92, 0.9);
+    transform: scale(1.05);
+}
+
+.button img {
+    width: 24px; /* Tamaño de iconos */
+    height: 24px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 16px; /* Texto del footer */
+    color: white; /* Texto blanco */
+    background-color: black; /* Fondo negro */
+    padding: 15px; /* Padding */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Mantener el footer fijo */
+    left: 0; /* Alinear a la izquierda */
+    bottom: 0; /* Fijar en la parte inferior */
+    text-align: center; /* Centrar texto */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño de texto en móviles */
+    }
+    .logo {
+        max-width: 100px; /* Tamaño más pequeño en móviles */
+    }
+    .button {
+        padding: 10px; /* Ajustar padding para móviles */
+        font-size: 16px; /* Tamaño de texto */
+    }
+}
