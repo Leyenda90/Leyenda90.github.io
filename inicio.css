@@ -27,7 +27,7 @@ h1 {
 }
 
 .logo {
-    max-width: 120px; /* Tamaño del logo */
+    max-width: 130px; /* Tamaño del logo */
     margin: 20px auto;
     display: block; /* Comportamiento de bloque */
 }
