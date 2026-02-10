@@ -19,6 +19,7 @@ body {
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
     margin-bottom: 70px; /* Espacio inferior para no superponerse con el footer */
+
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
     justify-content: center;
     gap: 10px; /* Espacio entre ícono y texto */
     transition: background-color 0.3s, transform 0.3s;
-    max-width: 350px; /* Ancho máximo para los botones */
+    max-width: 345px; /* Ancho máximo para los botones */
     width: 100%; /* Ocupar el 100% del ancho permitido */
 }
 
@@ -66,7 +67,7 @@ footer {
     color: white; /* Texto blanco */
     background-color: black; /* Fondo negro */
     padding: 15px; /* Padding */
-    width: 100%; /* Ancho completo */
+    width: 99%; /* Ancho completo */
     position: fixed; /* Mantener el footer fijo */
     left: 0; /* Alinear a la izquierda */
     bottom: 0; /* Fijar en la parte inferior */
