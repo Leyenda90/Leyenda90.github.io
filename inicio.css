@@ -14,30 +14,33 @@ body {
 .container {
     max-width: 400px; /* Ancho máximo */
     margin: 0 auto; /* Centrar el contenedor */
-    padding: 20px; /* Espacio interno */
+    padding: 10px; /* Reducir espacio interno para acercar los botones */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
     margin-bottom: 70px; /* Espacio inferior para no superponerse con el footer */
-
+    display: flex;           /* Usar Flexbox */
+    flex-direction: column;  /* Colocar elementos en columna */
+    align-items: center;     /* Centrar elementos horizontalmente */
+    justify-content: flex-start; /* Alinear elementos al inicio */
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin: 0px; /* Reducir margen para un texto más compacto */
     font-size: 2em;
 }
 
 .logo {
     max-width: 130px; /* Tamaño del logo */
-    margin: 20px auto;
+    margin: 10px auto; /* Mantener margen alrededor del logo */
     display: block; /* Comportamiento de bloque */
 }
 
 .button {
     background-color: rgba(255, 107, 129, 0.9);
     color: black; /* Color de texto en botones */
-    padding: 15px 10px; /* Padding de botones */
-    margin: 10px auto; /* Centrar los botones */
+    padding: 10px 5px; /* Reducir padding de los botones */
+    margin: 5px auto; /* Espacio entre botones */
     border: none;
     border-radius: 25px;
     text-decoration: none;
@@ -47,7 +50,7 @@ h1 {
     justify-content: center;
     gap: 10px; /* Espacio entre ícono y texto */
     transition: background-color 0.3s, transform 0.3s;
-    max-width: 345px; /* Ancho máximo para los botones */
+    max-width: 90%; /* Limitar ancho del botón al 90% del contenedor */
     width: 100%; /* Ocupar el 100% del ancho permitido */
 }
 
@@ -67,7 +70,7 @@ footer {
     color: white; /* Texto blanco */
     background-color: black; /* Fondo negro */
     padding: 15px; /* Padding */
-    width: 99%; /* Ancho completo */
+    width: 100%; /* Ancho completo */
     position: fixed; /* Mantener el footer fijo */
     left: 0; /* Alinear a la izquierda */
     bottom: 0; /* Fijar en la parte inferior */
