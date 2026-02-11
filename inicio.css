@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('imagenes/fondo.jpg'); /* Cambia esto por la URL de tu imagen de fondo */
+    background-image: url('imagenes/lila.jpg'); /* Cambia esto por la URL de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     color: black; /* Texto en negro */
@@ -14,19 +14,19 @@ body {
 .container {
     max-width: 400px; /* Ancho máximo */
     margin: 0 auto; /* Centrar el contenedor */
-    padding: 10px; /* Reducir espacio interno para acercar los botones */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 10px; /* Espaciado */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
-    margin-bottom: 70px; /* Espacio inferior para no superponerse con el footer */
-    display: flex;           /* Usar Flexbox */
-    flex-direction: column;  /* Colocar elementos en columna */
-    align-items: center;     /* Centrar elementos horizontalmente */
-    justify-content: flex-start; /* Alinear elementos al inicio */
+    margin-bottom: 70px; /* Espacio inferior */
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar elementos */
+    justify-content: flex-start; /* Alinear al inicio */
 }
 
 h1 {
-    margin: 0px; /* Reducir margen para un texto más compacto */
+    margin: 5px 0; /* Reducir margen para un texto más compacto */
     font-size: 2em;
 }
 
@@ -36,11 +36,14 @@ h1 {
     display: block; /* Comportamiento de bloque */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap'); /* Importar fuente elegante */
+
 .button {
-    background-color: rgba(255, 107, 129, 0.9);
-    color: black; /* Color de texto en botones */
-    padding: 10px 5px; /* Reducir padding de los botones */
-    margin: 5px auto; /* Espacio entre botones */
+    background-color: rgba(138, 43, 226, 0.9); /* Color de fondo lila */
+    color: white; /* Color de texto en botones (negro) */
+    font-family: 'Lora', serif; /* Cambiar tipografía a Lora */
+    padding: 10px 5px;
+    margin: 5px auto;
     border: none;
     border-radius: 25px;
     text-decoration: none;
@@ -48,14 +51,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espacio entre ícono y texto */
+    gap: 10px;
     transition: background-color 0.3s, transform 0.3s;
-    max-width: 90%; /* Limitar ancho del botón al 90% del contenedor */
-    width: 100%; /* Ocupar el 100% del ancho permitido */
+    max-width: 90%;
+    width: 100%;
 }
 
 .button:hover {
-    background-color: rgba(255, 60, 92, 0.9);
+    background-color: rgba(128, 0, 128, 0.9); /* Lila más oscuro al pasar el ratón */
     transform: scale(1.05);
 }
 
